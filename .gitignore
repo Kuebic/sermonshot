@@ -1,0 +1,3 @@
+# Third-party skill cloned locally; kept out of git (has its own upstream repo).
+# Other .claude content is still tracked normally.
+/.claude/skills/stop-slop/
