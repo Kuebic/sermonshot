@@ -82,8 +82,47 @@ h2 { font-size: 1.25rem; }
   font-family: ui-monospace, monospace;
   font-size: 0.85rem;
 }
-.pane-body { max-height: 26rem; overflow-y: auto; padding: 0 1rem; }
-.content p { white-space: pre-wrap; }
+.pane-body { max-height: 26rem; overflow-y: auto; padding: 0 1.25rem 1rem; }
+
+/* ---- rendered content (identical for both sides) ---- */
+.content h3 {
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 1.25rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--line);
+}
+.content h4 {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--ink);
+}
+.content h5 {
+  font-family: ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 1.4rem 0 0.35rem;
+}
+.content h5 + p, .content h5 + blockquote { margin-top: 0; }
+.content p { margin: 0.6rem 0 0.9rem; }
+.content blockquote {
+  margin: 0.4rem 0 1rem;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(122, 90, 245, 0.05);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+.content ul, .content ol { margin: 0.5rem 0 1rem; padding-left: 1.4rem; }
+.content li { margin: 0.45rem 0; }
+.content ol > li {
+  padding: 0.35rem 0.6rem;
+  background: rgba(122, 90, 245, 0.04);
+  border-radius: 6px;
+}
 
 .vote-row { display: flex; gap: 1rem; margin-top: 1rem; justify-content: center; }
 .vote {
